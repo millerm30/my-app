@@ -1,7 +1,7 @@
 import React from 'react'
 import './Product.css'
 
-function Pruduct({title, image, price, rating}) {
+function Product({title, image, price, rating}) {
   return (
     <div className='product'>
         <div className="product__info">
@@ -14,7 +14,7 @@ function Pruduct({title, image, price, rating}) {
                {Array(rating)
                .fill()
                .map((_, i) => (
-                    <p>*</p>
+                    <p>⭐</p>
                ))} 
             </div>
         </div>
@@ -24,4 +24,4 @@ function Pruduct({title, image, price, rating}) {
   )
 }
 
-export default Pruduct
+export default Product

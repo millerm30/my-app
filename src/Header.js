@@ -2,11 +2,12 @@ import React from 'react'
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import logo from './assets/azlogo.png';
 
 function Header() {
   return (
     <div className='header'>
-        <img className='header__logo' src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt=''/>
+        <img className='header__logo' src={logo} alt=''/>
         <div className='header__search'>
             <input className='header__searchInput' type='text' />
             <SearchIcon className='header__searchIcon' />
