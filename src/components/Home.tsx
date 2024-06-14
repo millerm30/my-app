@@ -1,16 +1,15 @@
-import './Home.css'
 import Product from './Product'
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="flex justify-center ml-auto mr-auto max-w-[1500px]">
       <div className="home__container">
         <img
-          className="home__image"
+          className="w-full z-[1] -mb-[180px] home__image"
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt=""
         />
-        <div className="home__row">
+        <div className="flex z-[1] ml-[5px] mr-[5px]">
           <Product
             title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
             price={29.99}
@@ -25,7 +24,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="home__row">
+        <div className="flex z-[1] ml-[5px] mr-[5px]">
           <Product
             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
             price={199.99}
@@ -46,7 +45,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="home__row">
+        <div className="flex z-[1] ml-[5px] mr-[5px]">
           <Product
             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
             price={1094.98}
