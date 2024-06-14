@@ -1,8 +1,7 @@
-import React from 'react'
 import './Home.css'
 import Product from './Product'
 
-function Home() {
+const Home = () => {
   return (
     <div className="home">
       <div className="home__container">
@@ -14,7 +13,7 @@ function Home() {
         <div className="home__row">
           <Product
             title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price="19.99"
+            price={29.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
             rating={4}
           />
