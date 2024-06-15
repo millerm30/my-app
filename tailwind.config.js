@@ -6,6 +6,16 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+ plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.mask-gradient': {
+          maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+        },
+      }
+
+      addUtilities(newUtilities)
+    }
+  ],
 }
 

@@ -11,7 +11,7 @@ const Header = () => {
         alt=""
       />
       <div className="flex flex-1 items-center rounded-[24px]">
-        <input className="h-[14px] p-[10px] border-none w-full rounded-tl-[5px] rounded-bl-[5px]" type="text" />
+        <input className="h-[14px] p-[12px] border-none w-full rounded-tl-[5px] rounded-bl-[5px]" type="text" />
         <SearchIcon className="p-[5px] h-[22px] bg-[#ff9900] rounded-tr-[5px] rounded-br-[5px]" />
       </div>
       <div className="flex justify-evenly">

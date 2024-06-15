@@ -13,11 +13,15 @@ const Product = ({title, image, price, rating}: ProductProps) => {
           {Array(rating)
             .fill("⭐")
             .map((_, i) => (
-              <p>⭐</p>
+              <p key={i}>⭐</p>
             ))}
         </div>
       </div>
-      <img src={image} alt="" className="max-h-[200px] w-full object-contain mb-4" />
+      <img
+        src={image}
+        alt=""
+        className="max-h-[200px] w-full object-contain mb-4"
+      />
       <button className="bg-[#f0c14b] border-[1px] border-solid mt-2 text-[#111] border-[#846a29]">
         Add to Basket
       </button>
